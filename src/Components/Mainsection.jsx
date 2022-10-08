@@ -10,19 +10,11 @@ function Mainsection() {
     initNote = JSON.parse(localStorage.getItem("NotesTodo"));
   }
   const addnote = (Title, Des) => {
-    let Key;
-    console.log("add", Title, Des);
-    if (NotesTodo.length == 0) {
-      Key = 0;
-    } else {
-      Key = NotesTodo[NotesTodo.length - 1].Key + 1;
-    }
     let NewNote = {
-      Key: Key,
       Title: Title,
       Des: Des,
     };
-    setNotesTodo([...NotesTodo, NewNote]);
+    setNotesTodo([NewNote, ...NotesTodo]);
   };
 
   const Delete = (Noteitem) => {

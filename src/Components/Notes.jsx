@@ -7,10 +7,8 @@ function Notes({ NotesTodo, DeleteNote }) {
       {NotesTodo.length === 0 ? (
         <h2 className="notes-h2">Don't have a note please add</h2>
       ) : (
-        NotesTodo.map((note) => {
-          return (
-            <Notesitem key={note.Key} Noteitem={note} Delete={DeleteNote} />
-          );
+        NotesTodo.map((note, index) => {
+          return <Notesitem key={index} Noteitem={note} Delete={DeleteNote} />;
         })
       )}
     </div>

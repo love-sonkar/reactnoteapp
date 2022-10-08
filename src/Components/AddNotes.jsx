@@ -21,7 +21,6 @@ function AddNotes({ addnote }) {
       <h2 className="h2 center">Add Your Personal Notes</h2>
       <form action="">
         <div className="title">
-          <h2>Title Here</h2>
           <input
             type="text"
             placeholder="Enter your title"
@@ -32,8 +31,7 @@ function AddNotes({ addnote }) {
           />
         </div>
         <div className="desc">
-          <h2>Notes Here</h2>
-          <input
+          <textarea
             type="text"
             placeholder="Enter your Note"
             value={Des}
