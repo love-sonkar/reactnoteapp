@@ -94,6 +94,7 @@ textarea {
 .addnotes h2 {
   font-size: 1.5rem;
   padding: 0.625rem 0;
+  text-align: center;
 }
 
 .addnotes button {
@@ -113,6 +114,7 @@ textarea {
 
 .notes {
   padding: 1rem;
+  word-break: break-word;
 }
 
 .notes-h2 {
@@ -125,14 +127,17 @@ textarea {
   box-shadow: 0px 3px 4px -4px black;
   padding: 1rem 0px;
   margin: 0.625rem 0;
+  word-break: break-word;
 }
 
 .note h2 {
   font-size: 1.7rem;
+  word-break: break-word;
 }
 
 .note p {
   font-size: 1.2rem;
+  word-break: break-word;
 }
 
 .note button {
